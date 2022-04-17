@@ -13,3 +13,21 @@ cuadrado(int x)
     
     return 0;
 }
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+int suma(int a, int b)
+{
+    return(a-b);
+}
+int main (){
+    int x=6,y=7;
+    int resultado;
+    //clrscr();
+    resultado=suma(6,7);
+    printf("Resultado:%d\n",resultado);
+    printf("Fin del programa");
+    return 0;
+    //getch();
+    }
