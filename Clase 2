@@ -31,3 +31,18 @@ int main (){
     return 0;
     //getch();
     }
+    
+    
+    // Online C compiler to run C program online
+#include <stdio.h>
+int valor_a (int var_1)
+{printf("Valor de a Var_1:%d\n",--var_1);
+    return 0; int main(void);
+}
+
+{int var_1=5;
+clrscr();
+printf("Valor de a var_1:%d\n",var_1);valor_a(var_1);
+printf("Fin");
+return 0;
+}
