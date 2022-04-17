@@ -46,3 +46,20 @@ printf("Valor de a var_1:%d\n",var_1);valor_a(var_1);
 printf("Fin");
 return 0;
 }
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+float num;
+float res,cubo(int x);
+
+int main() {
+    printf("ingrese un numero");
+    scanf("%f,&num");
+    res=cubo(num);
+    printf("%f al cubo es: %f",num,res);
+    return 0;
+    
+}
+float cubo(int x)
+{return x*x*x;}
