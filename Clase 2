@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   int num;
+   printf("\n Teclee un numpero entero");
+   scanf("%d",&num);
+   cuadrado(num);
+}
+cuadrado(int x)
+{
+    printf("\nEl cuadrado de %d es %d\n",x,x*x);
+    
+    return 0;
+}
