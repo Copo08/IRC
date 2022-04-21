@@ -1,0 +1,33 @@
+// Online C compiler to run C program online pedir valores e imprimir
+#include <stdio.h>
+
+int main() {
+    int b1=5;
+    int a1=19;
+    int Ar1=b1*a1;
+    printf("área del paralelogramo 1=%dmetros",Ar1);
+    int b2=30;
+    int a2=19;
+    int Ar2=b2*a2;
+    printf("\nárea del paralelogramo 2=%dmetros",Ar2);
+    int b3=10;
+    int a3=6;
+    int Ar3=b3*a3;
+    printf("\nárea del paralelogramo 3=%dmetros",Ar3);
+    int b4=25;
+    int a4=6;
+    int Ar4=b4*a4;
+    printf("\nárea del paralelogramo 4=%dmetros",Ar4);
+    int AT=Ar1+Ar2+Ar3+Ar4;
+    printf("\n área total del paralelogramo=%dmetros",AT);
+   int num;
+   printf("\n Teclee un numpero entero");
+   scanf("%d",&num);
+   cuadrado(num);
+}
+cuadrado(int x)
+{
+    printf("\nEl cuadrado de %d es %d\n",x,x*x*x);
+    
+    return 0;
+}
