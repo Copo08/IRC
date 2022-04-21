@@ -41,16 +41,17 @@ int main() {
     printf("\nEl costo total de bulbos es %d pesos",ctb);
     int cti=ctt+ctr+ctb;
     printf("\nEl costo total de implementación es %d pesos",cti);
-   int num;
-   printf("\n Teclee un numpero entero");
-   printf("\n\n Simulador");
-   scanf("%d",&num);
-   cuadrado(num);
+    printf("\n\n Simulador");
+   int pt;
+   printf("\n En caso de encontrar otro precio para la tubería, ingrese el precio por metro");
+   
+   scanf("%d",&pt);
+   costotuberia(pt);
 }
 
-cuadrado(int x)
+costotuberia(int tpt)
 {
-    printf("\nEl cuadrado de %d es %d\n",x,x*x*x);
+    printf("\nEl costo total de tuberia con el nuevo precio %d es %d\npesos",tpt,tpt*1750);
     
     return 0;
 }
