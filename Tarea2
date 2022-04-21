@@ -5,26 +5,49 @@ int main() {
     int b1=5;
     int a1=19;
     int Ar1=b1*a1;
-    printf("área del paralelogramo 1=%dmetros",Ar1);
+    printf("área del paralelogramo 1=%dmetros^2",Ar1);
     int b2=30;
     int a2=19;
     int Ar2=b2*a2;
-    printf("\nárea del paralelogramo 2=%dmetros",Ar2);
+    printf("\nárea del paralelogramo 2=%dmetros^2",Ar2);
     int b3=10;
     int a3=6;
     int Ar3=b3*a3;
-    printf("\nárea del paralelogramo 3=%dmetros",Ar3);
+    printf("\nárea del paralelogramo 3=%dmetros^2",Ar3);
     int b4=25;
     int a4=6;
     int Ar4=b4*a4;
-    printf("\nárea del paralelogramo 4=%dmetros",Ar4);
+    printf("\nárea del paralelogramo 4=%dmetros^2",Ar4);
     int AT=Ar1+Ar2+Ar3+Ar4;
-    printf("\n área total del paralelogramo=%dmetros",AT);
+    printf("\n área total del paralelogramo=%dmetros^2",AT);
+    int met=AT*2;
+    printf("\n los metros de tubería total son=%dmetros",met);
+    int ret=AT*2;
+    printf("\n Se necesitan %d reguladores",ret);
+    int tc=24;
+    printf("\nel tiempo de cosecha es %d meses ",tc);
+    int cad=3;
+    printf("\nla caducidad de los bulbos es de %d meses ",cad);
+    int tb=tc/cad;
+    printf("\nla duración de los bulbos es de %d meses ",tb);
+    int but=AT*10*tb;
+    printf("\n los bulbos totales son %d bulbos ",but);
+    printf("\n\nA continuación se muestra el desgloce de costos");
+    int ctt=met*100;
+    printf("\n\nEl costo total de tubería es %d pesos",ctt);
+    int ctr=ret*300;
+    printf("\nEl costo total de reguladores es %d pesos",ctr);
+    int ctb=but*250;
+    printf("\nEl costo total de bulbos es %d pesos",ctb);
+    int cti=ctt+ctr+ctb;
+    printf("\nEl costo total de implementación es %d pesos",cti);
    int num;
    printf("\n Teclee un numpero entero");
+   printf("\n\n Simulador");
    scanf("%d",&num);
    cuadrado(num);
 }
+
 cuadrado(int x)
 {
     printf("\nEl cuadrado de %d es %d\n",x,x*x*x);
