@@ -152,3 +152,48 @@ int main (){
 	return 0;
 }
 	
+//for
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+	int x,y,i;
+	printf("introduce un numero:");
+	scanf("%i", &x);
+	printf("introduce un numero mayor que el anterior:");
+	scanf("%i", &y);
+	//for esta en tres partes 1, inicializa el contador;condicion;
+	
+	for (i=x+1;i<y;i++){
+		printf("%i,",i);
+		
+	}
+	printf("\n");
+	
+	system("pause");
+	return 0;
+}
+FOR y While
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+	int x,y,i;
+	printf("introduce un numero:");
+	scanf("%i", &x);
+	printf("introduce un numero mayor que el anterior:");
+	scanf("%i", &y);
+	//for esta en tres partes 1, inicializa el contador;condicion;
+	
+	for (i=x+1;i<y;i++){
+		printf("%i,",i);
+		
+	}
+	printf("\n");
+	i=x+1;
+	while(i<y){
+		printf("%i,",i);
+		i++;
+	}
+	printf("\n");
+	system("pause");
+	return 0;
+}
