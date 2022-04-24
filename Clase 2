@@ -55,7 +55,7 @@ float res,cubo(int x);
 
 int main() {
     printf("ingrese un numero");
-    scanf("%f,&num");
+    scanf("%f",&num);
     res=cubo(num);
     printf("%f al cubo es: %f",num,res);
     return 0;
