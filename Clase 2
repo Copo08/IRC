@@ -63,3 +63,20 @@ int main() {
 }
 float cubo(int x)
 {return x*x*x;}
+
+Condiciones
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+	int edad =75;
+	if (edad>=18 && edad<=65){
+		printf("eres mayor de edad");
+	}else if (edad>65){
+		printf("estás en edad de retiro");
+	}else{
+		printf("Eres menor de edad");
+	}
+	printf("/n");
+	//system("puase");
+}
+
