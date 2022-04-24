@@ -98,3 +98,27 @@ int main (){
 		printf("opcion invalida");
 	}
 }
+
+Otro ejercicio de if
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+	int x;
+	printf ("introduce un numero entre 1 y 4");
+	scanf ("%i", &x);
+	
+	if (x==1){
+		printf("\nlunes.\n");
+	}
+	if (x==2){
+		printf("martes/n");
+	}
+	if (x==3){
+		printf("miercoles/n");
+	}
+	if (x==4){
+		printf("jueves/n");
+	}
+	system("pause");
+	return 0;
+}
