@@ -80,3 +80,21 @@ int main (){
 	//system("puase");
 }
 
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+	int opcion=1;
+	switch(opcion){
+	case 1:
+		printf("imprimier esrado de estudiantes");
+		break;
+	case 2:
+		printf ("solicitando lista de profesores");
+		break;
+	case 3:
+		printf("saliendo del sistema");
+		break;
+	default:
+		printf("opcion invalida");
+	}
+}
