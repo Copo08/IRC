@@ -1,0 +1,112 @@
+// Online C compiler to run C program online pedir valores e imprimir
+#include <stdio.h>
+
+int main() {
+ 	int opcion; //base del paraleogramo total
+ 	int b;
+ 	int h; //altura del paralelogramo total
+ 	int area; //área del paralelogramo
+ 	int mt; //metros de tuberia total
+ 	int B; //bulbos totales
+ 	int R; //reguladores
+ 	int mc; //meses de toda la cosecha
+ 	int mB; //tiempo de los bulbos
+ 	int pt; //precio de tuberia
+ 	int pr; //precio de regulares
+ 	float M; //mes para precio de cosecha
+ 	float cti; //costo total de implementacion del sistema de riego
+ 	int Pe=80000000; //presupuesto
+ 	
+ 	do{
+ 		printf("Costo total de implementacipon del sistema de riego por goteo \n\n");
+ 		printf("	Meú de opciones:\n");
+ 		printf("	1.-Costo de tubería:\n");
+ 		printf("	2.-Costo de bulbos:\n");
+ 		printf("	3.Costo de reguladores:\n");
+ 		printf("	4.Factibilidad del sistema de riego:\n");
+ 		printf("	5. Salir del menu\n");
+ 		printf("Elija una opción\n");
+ 		scanf("%i",&opcion);
+ 		
+ 		switch(opcion){
+ 			case 1:
+ 				printf("\n Ingrese la base en metros (m):");
+ 				scanf("%i",&b);
+ 				printf("\n Ingrese la altura en metros (m):");
+ 				scanf("%i",&h);
+ 				area=b*h;
+ 				mt=2*area; //total de metros de tubería
+ 				pt=mt*100; //costo total de tubería
+ 				printf("\n El área total es: %i m^2 \n\n",area);
+ 				printf("\n Los metros totalesde tubería son: %i m \n\n",mt);
+ 				printf("\n El precio total de la tubería es:$ %i  \n\n",pt);
+ 				
+ 				break;
+ 				
+ 				case 2:
+ 					printf ("Introduce la base en metros (m)");
+ 					scanf("%i",&b);
+ 					printf("Ingresa el valor de la altura en metros (m):");
+ 					scanf("%i",&h);
+ 					area=b*h;
+ 					printf("\n Introduce los meses de cosecha:");
+ 					scanf("%i",mc);
+ 					printf("\n Introduce la duración de bulbos:");
+ 					scanf("%i",&mB);
+ 					B=(mc/mB)*10*area;//Totales de bulbos
+ 					M=B*250; //Costo de los bulbos
+ 					printf("\n El área es: %i m^2 \n\n",area);
+ 					printf("\n Los bulbos totales son: %i bulbos \n\n",B);
+ 					printf("\n El precio de los bulbos es: $ %.f \n\n",M);
+ 					break;
+ 					
+ 				case 3:
+ 					printf("\n Introduce la base en metros (m)");
+ 					scanf("%i, & h");
+ 					
+ 					R=2*area; //total de reguladores
+ 					pr=R*300; //Costo de los reguladores
+ 					
+ 					printf("\n EL áre es: %i m^2 \n\n",area);
+ 					printf("\n Los reguladores totales son:%i piezas \n\n"),R;
+ 					printf("\n El precio de los reguladores es:$%i \n\n",pr);
+ 					break;
+ 					
+ 				case 4:
+ 					printf("\n Introduce el valor la base en metros");
+ 					scanf("%i",&b);
+ 					printf("\n Introduce el valor de la altura en metros ");
+ 					scanf("%i",&h);
+ 					printf("\n Introduce los meses de la cosecha");
+ 					scanf("%i",&mc);
+ 					printf("\n Introduce la duración de los bulbos");
+ 					scanf("%i", & mB);
+ 					area=b*h;
+ 					mt=2*area;
+ 					B=(mc/mB)*10*area;
+ 					R=2*area;
+ 					pt=mt*100;
+ 					M=B*250;
+ 					pr=R*300;
+ 					
+ 					//Costo toal de implementación del sistema de riego por goteo
+ 					cti=pt+M+pr;
+ 					printf("\n El costo total de implementación del sistema de riego por goteo es: $ %.f \n\n ",cti);
+ 					if (cti<Pe){
+ 						printf("Es factible su sistema de riego por goteo \n\n");
+ 					}else{
+ 						printf("No es factible su sistema de riego por goteo \n\n");
+ 				
+ 					}
+ 					break;
+ 					case 5:
+ 						printf("Gracias por su visita, vuelva pronto para otra consulta");
+ 						break;
+ 						default:
+ 							printf("Error: la opción ingresada no tiene respuesta, vuelva a revisar las opciones\n\n");
+ 							break;
+ 	}
+ 		}while(opcion !=5);
+ 	return 0;
+ 	}
+ 	
